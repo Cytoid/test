@@ -1,35 +1,78 @@
-A offset setting guide test.
+<html>
+    <head>
+        <style>
+            body {
+                background: none;
+                color: white;
+                font-size: 28px;
+                font-family: 'Nunito', sans-serif;
+                opacity: 0;
+                animation: fadein 1s;
+                animation-delay: 0.4s;
+                animation-fill-mode: forwards;
+            }
 
-Runs well on Cytoid 2.0.
-
-Based on Cytoid Official Chart and audio data.
-
-Cytoid 1.5 also can use it, but with the bug in old version, maybe it's useless.
-
-中文:
-
-一个延迟基准
-
-在2.0上非常有效
-
-这个延迟的值基于Cytoid官方谱面和实际音频数据
-
-Cytoid1.5也能用,但是因为老版本的bug,可能并不凑效
-
-For Charter:
-
-If you uesd my offset as based, I would feel very proud of it. Please add a tag as Offset Fixed on your chart, so player will know they needn't to fix the offset again before playing your chart. For best effect, we advice you to use .ogg as your audio file.
-
-And follow advice is How to fix your offset for your Chart:
-
-1.Use Cytoid2.0's chart offset set on This Chart. Fix your global offset.
-
-2.Use Cytoid2.0's chart offset set on Your Chart. Fix your chart offset.
-
-3.Find your C2 chart file. Open it with notepad++, VSCode or other text editor.
-
-4.Change the value of music_offset.Or add it like this.
-
-music_offset
-
-5. Done!!
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <p>
+            A offset setting guide test.
+          </p>
+          <p>
+            Runs well on Cytoid 2.0.
+          </p>
+          <p>
+            Based on Cytoid Official Chart and audio data.
+          </p>
+          <p>
+            Cytoid 1.5 also can use it, but with the bug in old version, maybe it's useless.
+          </p>
+          <p>
+            中文:
+          </p>
+          <p>
+            一个延迟基准
+          </p>
+          <p>
+            在2.0上非常有效
+          </p>
+          <p>
+            这个延迟的值基于Cytoid官方谱面和实际音频数据
+          </p>
+          <p>
+            Cytoid1.5也能用,但是因为老版本的bug,可能并不凑效
+          </p>
+          <p>
+            For Charter:
+          </p>
+          <p>
+            If you uesd my offset as based, I would feel very proud of it. Please add a tag as <code>Offset Fixed</code> on your chart, so player will know they needn't to fix the offset again before playing your chart. For best effect, we advice you to use <code>.ogg</code> as your audio file.
+          </p>
+          <p>
+            And follow advice is <strong>How to fix your offset for your Chart</strong>:
+          </p>
+          <p>
+            1.Use Cytoid2.0's chart offset set on <strong>This Chart</strong>. Fix your global offset.
+          </p>
+          <p>
+            2.Use Cytoid2.0's chart offset set on <strong>Your Chart</strong>. Fix your chart offset.
+          </p>
+          <p>
+            3.Find your C2 chart file. Open it with notepad++, VSCode or other text editor.
+          </p>
+          <p>
+            4.Change the value of <code>music_offset</code>.Or add it like this.
+          </p>
+          <p>
+            <img src="https://blog.teages.xyz/posts-source/cytoid/pic/music_offset.png" alt="music_offset">
+          </p>
+          <p>
+            5. Done!!
+          </p>
+    </body>
+</html>
