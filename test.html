@@ -2,13 +2,13 @@
     <head>
         <style>
             body {
-                background: none;
+                background: black;
                 color: white;
-                font-size: 28px;
+                font-size: 2vw;
                 font-family: 'Nunito', sans-serif;
                 opacity: 0;
                 animation: fadein 0.2s;
-                animation-delay: 0.2s;
+                animation-delay: 0.4s;
                 animation-fill-mode: forwards;
             }
             #body::-webkit-scrollbar {
@@ -17,6 +17,12 @@
             .fade-out {
                 animation: fadeout 0.2s;
                 animation-delay: 0s;
+            }
+            .light {
+                font-weight: 300;
+            }
+            .h1 {
+                font-size: 8vw;
             }
 
             @keyframes fadein {
@@ -29,7 +35,8 @@
                 to   { opacity: 0; }
             }
         </style>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.font.im/css?family=Nunito:300,300i,400,400i,700,700i" rel="stylesheet">
         <script>
             function FadeOut() {
                 document.getElementsByTagName("body")[0].classList.add("fade-out");
@@ -37,59 +44,23 @@
         </script>
     </head>
     <body>
-        <p>
-            A offset setting guide test.
-          </p>
-          <p>
-            Runs well on Cytoid 2.0.
-          </p>
-          <p>
-            Based on Cytoid Official Chart and audio data.
-          </p>
-          <p>
-            Cytoid 1.5 also can use it, but with the bug in old version, maybe it's useless.
-          </p>
-          <p>
-            中文:
-          </p>
-          <p>
-            一个延迟基准
-          </p>
-          <p>
-            在2.0上非常有效
-          </p>
-          <p>
-            这个延迟的值基于Cytoid官方谱面和实际音频数据
-          </p>
-          <p>
-            Cytoid1.5也能用,但是因为老版本的bug,可能并不凑效
-          </p>
-          <p>
-            For Charter:
-          </p>
-          <p>
-            If you uesd my offset as based, I would feel very proud of it. Please add a tag as <code>Offset Fixed</code> on your chart, so player will know they needn't to fix the offset again before playing your chart. For best effect, we advice you to use <code>.ogg</code> as your audio file.
-          </p>
-          <p>
-            And follow advice is <strong>How to fix your offset for your Chart</strong>:
-          </p>
-          <p>
-            1.Use Cytoid2.0's chart offset set on <strong>This Chart</strong>. Fix your global offset.
-          </p>
-          <p>
-            2.Use Cytoid2.0's chart offset set on <strong>Your Chart</strong>. Fix your chart offset.
-          </p>
-          <p>
-            3.Find your C2 chart file. Open it with notepad++, VSCode or other text editor.
-          </p>
-          <p>
-            4.Change the value of <code>music_offset</code>.Or add it like this.
-          </p>
-          <p>
-            <img src="https://blog.teages.xyz/posts-source/cytoid/pic/music_offset.png" alt="music_offset">
-          </p>
-          <p>
-            5. Done!!
-          </p>
+        <div style="display: flex; width: 100%">
+            <div style="width: 50%;">
+                <div style="width: 100%">
+                    <img src="TiraTachie-min.png" style="width: 150%; margin-left: -33%;"/>
+                </div>
+            </div>
+            <div style="width: 50%;">
+                <div style="padding: 4vw;">
+                    <p class="h1 light" style="margin-top: 4vw; margin-bottom: 4vw;">Tira</p>
+                    <p style="opacity: 0.7;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt nisi magna, eget ullamcorper ligula malesuada ut. Duis ac venenatis sem. Aliquam finibus dictum justo, sed accumsan diam pharetra non. Nullam tincidunt libero enim, sed vestibulum metus dapibus a. Quisque tristique turpis tincidunt nisl volutpat dictum. Proin rhoncus viverra pulvinar. Nulla auctor diam massa, eu volutpat mi ultrices id. Sed vulputate sapien leo, eget tincidunt ligula dictum at. Suspendisse potenti. Etiam diam felis, commodo vitae laoreet non, fermentum sed nulla. In vitae pharetra mauris. Donec vitae posuere leo, id bibendum elit. Aenean semper nisi vel dui tincidunt, vitae posuere elit lobortis.
+                    </p>
+                    <p style="opacity: 0.7;">
+                        Morbi vestibulum lectus quam, ac pellentesque nibh ornare eget. Sed vel dolor placerat, aliquam ligula et, ultricies neque. Praesent vehicula purus nec lacus congue, rutrum tincidunt augue convallis. Donec et arcu urna. Suspendisse porta, tortor eu tempor dapibus, lectus sem tristique lorem, venenatis varius tellus odio suscipit tellus. Sed nibh odio, bibendum quis ornare at, sodales pulvinar libero. Ut tincidunt porttitor convallis. Duis iaculis risus lorem, vel egestas enim ullamcorper a. Praesent ac erat massa. Cras convallis condimentum venenatis. Praesent lobortis, justo non sagittis porta, eros ante consectetur ipsum, eu auctor erat magna eu eros. Donec mattis felis fringilla urna euismod lacinia. Sed ut felis eget est elementum facilisis. Nullam quis finibus dui. Sed in nibh vitae lectus euismod pretium pharetra id ante. Nulla a purus egestas, dictum odio sed, interdum ligula.
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
